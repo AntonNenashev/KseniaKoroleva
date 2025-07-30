@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Ксении Королевой | Дизайнер интерьеров</title>
+    <!--= Google Fonts =-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!--= Remixicons=-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--= SwiperJS CSS =-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--= Main, media CSS =-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!--= Шапка =-->
+    <header id="header" class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="nav__brand">
+                    <i class="ri-palette-line"></i><span>Ксения</span>
+                </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#hero" class="nav__link">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">Обо мне</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#qualification" class="nav__link">Опыт</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#service" class="nav__link">Услуги</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#project" class="nav__link">Проекты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav__toggle">
+                    <i id="nav-toggle" class="ri-menu-3-line"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--= Основное содержимое =-->
+    <main class="main">
+        <!--= Герой =-->
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="d-grid hero__wrapper">
+                    <div class="hero__content">
+                        <h1 class="hero__title">Привет, я <span>Ксения Королева</span>,<br><span class="typed-text"></span></h1>
+                        <p class="hero__description">Создаю гармоничные и функциональные интерьеры, которые отражают индивидуальность клиентов. Превращаю ваше пространство в произведение искусства.</p>
+                        <div class="hero__info">
+                            <div class="hero__info-wrapper">
+                                <p class="hero__info-number">05+</p>
+                                <h2 class="hero__info-title">Лет<br>Опыта</h2>
+                            </div>
+                            <div class="hero__info-wrapper">
+                                <p class="hero__info-number">50+</p>
+                                <h2 class="hero__info-title">Реализованных<br>Проектов</h2>
+                            </div>
+                            <div class="hero__info-wrapper">
+                                <p class="hero__info-number">03</p>
+                                <h2 class="hero__info-title">Дизайнерских<br>Наград</h2>
+                            </div>
+                        </div>
+                        <div class="hero__buttons">
+                            <a href="#contact" class="btn btn--primary">Обсудить проект</a>
+                            <a href="#project" class="btn btn--secondary">Мои работы</a>
+                        </div>
+                    </div>
+                    <div class="hero__img-wrapper">
+                        <img src="img/hero1.jpg" alt="Ксения Королева" class="hero__img">
+                        <div class="hero__img-bg"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--= Обо мне =-->
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Обо мне</h2>
+                    <span class="section__subtitle">(кто я)</span>
+                </div>
+                <div class="d-grid about__wrapper">
+                    <div class="about__content">
+                        <h3 class="about__title">Я профессиональный <span>дизайнер интерьеров</span> с международным опытом.</h3>
+                        <p class="about__description">Специализируюсь на создании элегантных и функциональных пространств, сочетающих современные тенденции с индивидуальными потребностями клиентов. Мой подход - это баланс эстетики, комфорта и практичности.</p>
+                        <div class="about__buttons">
+                            <a href="#" class="btn btn--primary">Скачать портфолио</a>
+                            <a href="#project" class="btn btn--outline">Мои проекты</a>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <h3 class="skills__title">Направления, в которых я работаю:</h3>
+                        <div class="skills__wrapper">
+                            <div class="skills__content">
+                                <h4 class="skills__subtitle">Стили</h4>
+                                <ul class="skills__list">
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                        Современный</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                        Скандинавский</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                        Лофт</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                        Минимализм</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                        Неоклассика</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                        Эклектика</li>
+                                </ul>
+                            </div>
+                            <div class="skills__content">
+                                <h4 class="skills__subtitle">Навыки</h4>
+                                <ul class="skills__list">
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                        3D визуализация</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                        Авторский надзор</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                        Подбор материалов</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                        Планировка пространства</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                        Освещение</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                        Декорирование</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--= Квалификация =-->
+        <section id="qualification" class="section qualification">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Опыт работы</h2>
+                    <span class="section__subtitle">(мой путь)</span>
+                </div>
+                <!--= Профессиональный опыт =-->
+                <div class="qualification__wrapper">
+                    <h3 class="qualification__name">
+                        <i class="ri-briefcase-fill"></i>
+                        Профессиональный опыт
+                    </h3>
+                    <div class="d-grid qualification__content">
+                        <!--= Опыт 1 =-->
+                        <div class="qualification__item">
+                            <div class="qualification__icon"><i class="ri-home-4-fill"></i></div>
+                            <h3 class="qualification__title">Ведущий дизайнер в "Luxury Interiors"</h3>
+                            <p class="qualification__description">Разработка концепций премиальных интерьеров, управление проектами, работа с VIP-клиентами.</p>
+                            <span class="qualification__date">2020 - Настоящее время</span>
+                        </div>
+                        <!--= Опыт 2 =-->
+                        <div class="qualification__item">
+                            <div class="qualification__icon"><i class="ri-building-2-fill"></i></div>
+                            <h3 class="qualification__title">Дизайнер в "Urban Space Design"</h3>
+                            <p class="qualification__description">Создание современных интерьеров жилых и коммерческих помещений, разработка 3D-визуализаций.</p>
+                            <span class="qualification__date">2017 - 2020</span>
+                        </div>
+                        <!--= Опыт 3 =-->
+                        <div class="qualification__item">
+                            <div class="qualification__icon"><i class="ri-store-2-fill"></i></div>
+                            <h3 class="qualification__title">Ассистент дизайнера в "Decor Studio"</h3>
+                            <p class="qualification__description">Подбор материалов, разработка эскизов, помощь в реализации проектов.</p>
+                            <span class="qualification__date">2015 - 2017</span>
+                        </div>
+                    </div>
+                </div>
+                <!--= Образование =-->
+                <div class="qualification__wrapper">
+                    <h3 class="qualification__name">
+                        <i class="ri-booklet-fill"></i>
+                        Образование
+                    </h3>
+                    <div class="d-grid qualification__content">
+                        <!--= Образование 1 =-->
+                        <div class="qualification__item">
+                            <div class="qualification__icon"><i class="ri-graduation-cap-fill"></i></div>
+                            <h3 class="qualification__title">Магистр дизайна интерьера</h3>
+                            <p class="qualification__description">Британская высшая школа дизайна, специализация "Современные интерьерные решения".</p>
+                            <span class="qualification__date">2013 - 2015</span>
+                        </div>
+                        <!--= Образование 2 =-->
+                        <div class="qualification__item">
+                            <div class="qualification__icon"><i class="ri-artboard-fill"></i></div>
+                            <h3 class="qualification__title">Курсы 3D-визуализации</h3>
+                            <p class="qualification__description">Интенсивное обучение работе с 3ds Max, Corona Render и V-Ray.</p>
+                            <span class="qualification__date">2016</span>
+                        </div>
+                        <!--= Образование 3 =-->
+                        <div class="qualification__item">
+                            <div class="qualification__icon"><i class="ri-palette-fill"></i></div>
+                            <h3 class="qualification__title">Бакалавр искусств</h3>
+                            <p class="qualification__description">Московский государственный академический художественный институт.</p>
+                            <span class="qualification__date">2009 - 2013</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="qualification__footer">
+                    <p class="qualification__footer-text">Хотите узнать больше о моем опыте?</p>
+                    <a href="#" class="btn btn--primary">Полное резюме</a>
+                </div>
+            </div>
+        </section>
+
+        <!--= Услуги =-->
+        <section id="service" class="section service">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Услуги</h2>
+                    <span class="section__subtitle">(что я предлагаю)</span>
+                </div>
+                <div class="d-grid service__wrapper">
+                    <!--= Карточка услуги 1 =-->
+                    <div class="service__card">
+                        <div class="service__icon">
+                            <i class="ri-home-4-line"></i>
+                        </div>
+                        <h3 class="service__title">Дизайн<br>квартир</h3>
+                        <p class="service__description">Полный цикл разработки дизайна жилых помещений от концепции до реализации с учетом всех пожеланий.</p>
+                        <a href="#" class="service__link">Узнать больше <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                    <!--= Карточка услуги 2 =-->
+                    <div class="service__card">
+                        <div class="service__icon">
+                            <i class="ri-building-2-line"></i>
+                        </div>
+                        <h3 class="service__title">Дизайн<br>коммерческих помещений</h3>
+                        <p class="service__description">Создание функциональных и эстетичных пространств для ресторанов, офисов, магазинов и других бизнес-объектов.</p>
+                        <a href="#" class="service__link">Узнать больше <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                    <!--= Карточка услуги 3 =-->
+                    <div class="service__card">
+                        <div class="service__icon">
+                            <i class="ri-crop-line"></i>
+                        </div>
+                        <h3 class="service__title">3D<br>визуализация</h3>
+                        <p class="service__description">Фотореалистичные 3D-рендеры будущего интерьера, позволяющие увидеть результат до начала работ.</p>
+                        <a href="#" class="service__link">Узнать больше <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--= Проекты =-->
+        <section id="project" class="section project">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Проекты</h2>
+                    <span class="section__subtitle">(мои работы)</span>
+                </div>
+                <div class="d-grid project__wrapper">
+                    <!--= Проект 1 =-->
+                    <div class="project__content">
+                        <div class="project__img-wrapper">
+                            <img src="img/project1.jpg" alt="Лофт-квартира в Москве" class="project__img">
+                            <div class="project__overlay">
+                                <a href="#" class="project__link">Посмотреть <i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project__title">Лофт-квартира в центре Москвы</h3>
+                        <p class="project__description">Современный лофт с индустриальными элементами и теплыми деревянными акцентами для молодой семьи.</p>
+                        <div class="project__tags">
+                            <span>Лофт</span>
+                            <span>120 м²</span>
+                            <span>2023</span>
+                        </div>
+                    </div>
+                    <!--= Проект 2 =-->
+                    <div class="project__content">
+                        <div class="project__img-wrapper">
+                            <img src="img/project2.jpg" alt="Ресторан в Санкт-Петербурге" class="project__img">
+                            <div class="project__overlay">
+                                <a href="#" class="project__link">Посмотреть <i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project__title">Ресторан европейской кухни</h3>
+                        <p class="project__description">Элегантный интерьер с элементами ар-деко для премиального ресторана в историческом центре.</p>
+                        <div class="project__tags">
+                            <span>Ар-деко</span>
+                            <span>250 м²</span>
+                            <span>2022</span>
+                        </div>
+                    </div>
+                    <!--= Проект 3 =-->
+                    <div class="project__content">
+                        <div class="project__img-wrapper">
+                            <img src="img/project3.jpg" alt="Загородный дом" class="project__img">
+                            <div class="project__overlay">
+                                <a href="#" class="project__link">Посмотреть <i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project__title">Загородный дом в скандинавском стиле</h3>
+                        <p class="project__description">Уютный и функциональный дом с панорамными окнами и натуральными материалами.</p>
+                        <div class="project__tags">
+                            <span>Скандинавский</span>
+                            <span>180 м²</span>
+                            <span>2021</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project__footer">
+                    <a href="#" class="btn btn--primary">Все проекты</a>
+                </div>
+            </div>
+        </section>
+
+        <!--= Отзывы =-->
+        <section id="testimonial" class="section testimonial">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Отзывы</h2>
+                    <span class="section__subtitle">(что говорят клиенты)</span>
+                </div>
+                <div class="testimonial__wrapper swiper">
+                    <div class="swiper-wrapper">
+                        <!--= Отзыв 1 = -->
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote"><i class="ri-double-quotes-l"></i></div>
+                            <img src="img/testimonial1.jpg" alt="Анна Смирнова" class="testimonial__img">
+                            <div class="testimonial__content">
+                                <p class="testimonial__description">Ксения создала для нас квартиру мечты! Она учла все наши пожелания и добавила профессиональный взгляд. Результат превзошел все ожидания - теперь у нас не просто квартира, а произведение искусства.</p>
+                                <div class="testimonial__author">
+                                    <h3 class="testimonial__name">Анна Смирнова</h3>
+                                    <span class="testimonial__occupation">Клиент, квартира в ЖК "Престиж"</span>
+                                    <div class="testimonial__rating">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--= Отзыв 2 = -->
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote"><i class="ri-double-quotes-l"></i></div>
+                            <img src="img/testimonial2.webp" alt="Вера Хоборова" class="testimonial__img">
+                            <div class="testimonial__content">
+                                <p class="testimonial__description">Работать с Ксенией было одно удовольствие. Она не только талантливый дизайнер, но и отличный организатор. Все работы по ремонту прошли в срок и без проблем. Интерьер ресторана теперь - наша гордость!</p>
+                                <div class="testimonial__author">
+                                    <h3 class="testimonial__name">Вера Хоборова</h3>
+                                    <span class="testimonial__occupation">Владелец ресторана "La Belle"</span>
+                                    <div class="testimonial__rating">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--= Отзыв 3 = -->
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote"><i class="ri-double-quotes-l"></i></div>
+                            <img src="img/testimonial3.jpg" alt="Ольга Петрова" class="testimonial__img">
+                            <div class="testimonial__content">
+                                <p class="testimonial__description">Ксения смогла создать уютный и стильный интерьер для нашего загородного дома. Особенно впечатлило внимание к деталям и продуманность каждого элемента. Теперь это наше любимое место для отдыха всей семьей.</p>
+                                <div class="testimonial__author">
+                                    <h3 class="testimonial__name">Ольга Петрова</h3>
+                                    <span class="testimonial__occupation">Клиент, загородный дом</span>
+                                    <div class="testimonial__rating">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--= Контакты =-->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Контакты</h2>
+                    <span class="section__subtitle">Свяжитесь со мной</span>
+                </div>
+                <div class="d-grid contact__wrapper">
+                    <div class="contact__content">
+                        <h2 class="contact__title">Готовы начать проект?</h2>
+                        <p class="contact__description">
+                            Если вы хотите обсудить ваш будущий интерьер или у вас есть вопросы, напишите мне. Я с радостью помогу создать пространство вашей мечты.
+                        </p>
+                        <div class="contact__info">
+                            <div class="contact__info-item">
+                                <i class="ri-mail-fill"></i>
+                                <div>
+                                    <h3 class="contact__title-link">Email</h3>
+                                    <a href="mailto:hello@kseniyakoroleva.ru" class="contact__info-link">hello@kseniyakoroleva.ru</a>
+                                </div>
+                            </div>
+                            <div class="contact__info-item">
+                                <i class="ri-phone-fill"></i>
+                                <div>
+                                    <h3 class="contact__title-link">Телефон</h3>
+                                    <a href="tel:+79991234567" class="contact__info-link">+7 (999) 123-45-67</a>
+                                </div>
+                            </div>
+                            <div class="contact__info-item">
+                                <i class="ri-map-pin-fill"></i>
+                                <div>
+                                    <h3 class="contact__title-link">Местоположение</h3>
+                                    <span>Москва, ул. Дизайнеров, 15</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact__social">
+                            <a href="#" class="contact__social-link"><i class="ri-instagram-fill"></i></a>
+                            <a href="#" class="contact__social-link"><i class="ri-telegram-fill"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact__form">
+                        <div class="contact__form-group">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" id="name" placeholder="Введите ваше имя" required>
+                        </div>
+                        <div class="contact__form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Введите ваш email" required>
+                        </div>
+                        <div class="contact__form-group">
+                            <label for="subject">Тип проекта</label>
+                            <input type="text" id="subject" placeholder="Квартира, дом, коммерческое помещение?">
+                        </div>
+                        <div class="contact__form-group">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" rows="5" placeholder="Расскажите о вашем проекте" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary">Отправить запрос</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--= Подвал =-->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="d-grid footer__wrapper">
+                <div class="footer__content">
+                    <a href="#" class="footer__brand">
+                        <i class="ri-palette-line"></i>Ксения Королева
+                    </a>
+                    <p class="footer__description">Дизайнер интерьеров, создающий гармоничные и вдохновляющие пространства.</p>
+                </div>
+                <div class="footer__content">
+                    <h4 class="footer__title">Навигация</h4>
+                    <ul class="footer__links">
+                        <li><a href="#hero" class="footer__link">Главная</a></li>
+                        <li><a href="#about" class="footer__link">Обо мне</a></li>
+                        <li><a href="#qualification" class="footer__link">Опыт</a></li>
+                        <li><a href="#project" class="footer__link">Проекты</a></li>
+                        <li><a href="#contact" class="footer__link">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__content">
+                    <h4 class="footer__title">Услуги</h4>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Дизайн квартир</a></li>
+                        <li><a href="#" class="footer__link">Дизайн домов</a></li>
+                        <li><a href="#" class="footer__link">Коммерческие проекты</a></li>
+                        <li><a href="#" class="footer__link">3D визуализация</a></li>
+                    </ul>
+                </div>
+                <div class="footer__content">
+                    <h4 class="footer__title">Соцсети</h4>
+                    <ul class="footer__social">
+                        <li><a href="#" class="footer__social-link"><i class="ri-instagram-fill"></i></a></li>
+                        <li><a href="#" class="footer__social-link"><i class="ri-telegram-fill"></i></a></li>
+                    </ul>
+                    <div class="footer__newsletter">
+                        <input type="email" placeholder="Ваш email для рассылки">
+                        <button><i class="ri-send-plane-fill"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--= Кнопка вверх =-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--= SwiperJS =-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!--= ScrollReveal =-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--= Typed.js =-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!--= Main JS =-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
