@@ -6,12 +6,6 @@
 /* -------------------- */
 /* Глобальные/Общие стили */
 /* -------------------- */
-@media screen and (max-width: 1200px) {
-  .section {
-    padding: 2rem 0;
-  }
-}
-
 @media screen and (max-width: 340px) {
   .container {
     width: 95%;
@@ -365,7 +359,7 @@
     font-size: var(--fs-lg);
     display: inline-flex;
     align-items: flex-start;
-    margin: 0;
+    margin-bottom: 2.2rem;
     padding: 0;
     line-height: 1.2;
   }

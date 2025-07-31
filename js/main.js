@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
   navToggle.addEventListener('click', () => {
     navMenu.classList.toggle('nav__menu--open');
     document.body.classList.toggle('no-scroll');
-    changeIcon(); // Добавляем смену иконки
+    changeIcon();
 
     // Create overlay
     const overlay = document.createElement('div');
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
       navMenu.classList.remove('nav__menu--open');
       overlay.classList.remove('nav__overlay--show');
       document.body.classList.remove('no-scroll');
-      changeIcon(); // Добавляем смену иконки
+      changeIcon();
       setTimeout(() => {
         overlay.remove();
       }, 300);
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const overlay = document.querySelector('.nav__overlay');
       if (overlay) overlay.remove();
       document.body.classList.remove('no-scroll');
-      changeIcon(); // Добавляем смену иконки
+      changeIcon();
     });
   });
 
@@ -61,25 +61,6 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
       header.classList.remove('header--scroll');
     }
-  });
-
-  // Scroll to top button
-  const scrollUp = document.getElementById('scroll-up');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-      scrollUp.classList.add('scrollup--show');
-    } else {
-      scrollUp.classList.remove('scrollup--show');
-    }
-  });
-
-  // Обработчик клика для плавного скролла вверх
-  scrollUp.addEventListener('click', (e) => {
-    e.preventDefault();
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
   });
 
   // Smooth scroll for anchor links
@@ -106,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: 1,
-    effect: "coverflow", // Добавляем эффект coverflow
+    effect: "coverflow",
     coverflowEffect: {
       rotate: 50,
       stretch: 0,
@@ -144,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function () {
     startDelay: 500
   });
 
-  // Scroll reveal animations с более детальными настройками
+  // Scroll reveal animations
   const sr = ScrollReveal({
     origin: 'top',
     distance: '100px',

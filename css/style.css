@@ -139,7 +139,7 @@ select {
 }
 
 .section {
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
 .section__header {
@@ -526,7 +526,7 @@ select {
 
 /* Qualification */
 .qualification__wrapper {
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
 }
 
 .qualification__name {
@@ -722,8 +722,7 @@ select {
   transform: translateX(5px);
 }
 
-* Projects */
-.project__wrapper {
+* Projects */ .project__wrapper {
   display: grid;
   gap: 3rem;
 }
@@ -1073,6 +1072,13 @@ select {
   padding: 8rem 0 0;
 }
 
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
 .footer__wrapper {
   display: grid;
   gap: 5rem;
@@ -1086,7 +1092,7 @@ select {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.2rem;
 }
 
 .footer__brand i {
@@ -1118,7 +1124,7 @@ select {
 
 .footer__links {
   display: grid;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .footer__link {
@@ -1178,36 +1184,6 @@ select {
 
 .footer__newsletter button:hover {
   opacity: 0.9;
-}
-
-/* Scroll up
---------------------------------------------------------------*/
-.scrollup {
-  position: fixed;
-  right: 2rem;
-  bottom: -50%;
-  background: var(--gradient-primary);
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-white);
-  font-size: var(--fs-xl);
-  box-shadow: var(--shadow-md);
-  z-index: var(--zindex-fixed);
-  transition: var(--transition);
-  opacity: 0.8;
-}
-
-.scrollup:hover {
-  opacity: 1;
-  transform: translateY(-0.5rem);
-}
-
-.scrollup--show {
-  bottom: 2rem;
 }
 
 /* Animation
