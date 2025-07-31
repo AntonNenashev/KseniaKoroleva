@@ -511,13 +511,6 @@
     padding: 0 0 1rem 0;
     line-height: 1.2;
   }
-
-  .scrollup {
-    right: 7rem;
-    bottom: 1%;
-    width: 4rem;
-    height: 4rem;
-  }
 }
 
 @media screen and (min-width: 768px) {
