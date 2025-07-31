@@ -83,20 +83,24 @@
 /* -------------------- */
 /* Hero секция */
 /* -------------------- */
-@media screen and (max-width: 400px) {
-  .hero__info {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.8px) {
   .section {
     padding: 1rem 0;
   }
 
   .hero__wrapper {
     padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero__img-wrapper {
+    order: -1;
+    margin-bottom: 3rem;
+  }
+
+  .hero__content {
+    order: 1;
   }
 
   .hero__title {
@@ -148,6 +152,46 @@
   }
 }
 
+@media screen and (max-width: 400px) {
+  .section__title {
+    font-size: var(--fs-xl);
+  }
+
+  .section__subtitle {
+    font-size: var(--fs-md);
+  }
+
+  .hero__info {
+    gap: 3.5rem;
+  }
+
+  .hero__img-wrapper {
+    margin-bottom: 1rem;
+  }
+
+  .d-grid {
+    gap: 1rem;
+  }
+
+  .hero__img {
+    max-width: 290px;
+  }
+
+  .hero__title {
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    margin-bottom: 2rem;
+    max-width: 33rem;
+  }
+
+  .hero__info-number {
+    font-size: var(--fs-md);
+  }
+
+  .hero__info-title {
+    font-size: var(--fs-xs);
+  }
+}
+
 /* -------------------- */
 /* About/Skills секция */
 /* -------------------- */
@@ -187,6 +231,18 @@
   .skills__title::after {
     left: 0;
     transform: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about__description {
+    font-size: var(--fs-md);
+  }
+
+  .about__content {
+    max-width: 60rem;
+    margin: 0 auto 1rem;
+    padding: 2rem;
   }
 }
 
@@ -346,6 +402,27 @@
   }
 }
 
+@media screen and (max-width: 400px) {
+  .contact__title {
+    font-size: var(--fs-lg);
+    margin-bottom: 1rem;
+  }
+
+  .contact__description {
+    font-size: var(--fs-md);
+    margin-bottom: 1.5rem;
+  }
+
+  .contact__title-link {
+    font-size: var(--fs-md);
+  }
+
+  .contact__info-link {
+    font-size: var(--fs-xs);
+  }
+}
+
+
 /* -------------------- */
 /* Footer */
 /* -------------------- */
@@ -408,5 +485,29 @@
   .footer__links {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer__description {
+    margin-bottom: 1rem;
+    font-size: var(--fs-md);
+  }
+
+  .footer__links {
+    gap: 0.5rem;
+  }
+
+  .footer__title {
+    font-size: var(--fs-md);
+    padding-bottom: 0.5rem;
+  }
+
+  .footer__link {
+    font-size: var(--fs-xs);
+  }
+
+  .footer__newsletter input {
+    max-width: 16rem;
   }
 }
