@@ -6,6 +6,12 @@
 /* -------------------- */
 /* Глобальные/Общие стили */
 /* -------------------- */
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 85%;
+  }
+}
+
 @media screen and (max-width: 340px) {
   .container {
     width: 95%;
@@ -21,9 +27,10 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 85%;
+@media screen and (max-width: 280px) {
+  .btn {
+    padding: 1rem 1.5rem;
+    font-size: var(--fs-xs);
   }
 }
 
@@ -77,6 +84,31 @@
   .nav__overlay--show {
     opacity: 1;
     visibility: visible;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    padding: 10px 15px;
+  }
+
+  .nav__toggle {
+    position: relative;
+    right: 5px;
+    margin-left: auto;
+    padding: 5px;
+  }
+
+  .nav__toggle i {
+    font-size: var(--fs-lg);
+  }
+
+  .nav__brand {
+    font-size: var(--fs-sm);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 60%;
   }
 }
 
@@ -149,6 +181,7 @@
 
   .hero__img {
     justify-self: flex-end;
+    max-width: 90%;
   }
 }
 
@@ -177,6 +210,10 @@
     max-width: 290px;
   }
 
+  .hero__content {
+    overflow-x: hidden;
+  }
+
   .hero__title {
     font-size: clamp(2rem, 6vw, 3.5rem);
     margin-bottom: 2rem;
@@ -189,6 +226,23 @@
 
   .hero__info-title {
     font-size: var(--fs-xs);
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .hero__img {
+      max-width: 240px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .hero__title {
+    word-break: break-word;
+    font-size: 1.8rem;
+  }
+
+  .container {
+    width: 98%;
   }
 }
 
@@ -231,6 +285,17 @@
   .skills__title::after {
     left: 0;
     transform: none;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .about__content {
+    margin: 0 auto 2rem;
+    padding: 2rem;
+  }
+
+  .d-grid {
+    gap: 1.5rem;
   }
 }
 
@@ -429,7 +494,7 @@
 @media screen and (min-width: 560px) {
   .footer__wrapper {
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
+    gap: 2rem;
   }
 
   .footer__brand {

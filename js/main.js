@@ -129,8 +129,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const sr = ScrollReveal({
     origin: 'top',
     distance: '100px',
-    duration: 800,
-    delay: 300,
+    duration: 700,
+    delay: 200,
     reset: false
   });
 
@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   sr.reveal(
     '.hero__info-wrapper, .skills__title, .skills__content, .qualification__name, .qualification__item, .service__card, .project__content, .testimonial__wrapper, .footer__content', {
-      delay: 500,
+      delay: 400,
       interval: 100,
     }
   );
@@ -176,3 +176,26 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+// Добавьте этот код в ваш существующий JS
+function checkTogglePosition() {
+  const navToggle = document.getElementById('nav-toggle');
+  const navBrand = document.querySelector('.nav__brand');
+  const container = document.querySelector('.container');
+
+  if (window.innerWidth <= 400) {
+    const containerRight = container.getBoundingClientRect().right;
+    const toggleRight = navToggle.getBoundingClientRect().right;
+
+    if (toggleRight > containerRight) {
+      // Если кнопка выходит за контейнер, уменьшаем бренд
+      navBrand.style.maxWidth = '60%';
+    }
+  } else {
+    navBrand.style.maxWidth = '';
+  }
+}
+
+// Вызываем при загрузке и ресайзе
+window.addEventListener('load', checkTogglePosition);
+window.addEventListener('resize', checkTogglePosition);
