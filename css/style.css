@@ -138,6 +138,13 @@ select {
   margin: 0 auto;
 }
 
+.hero__img,
+.nav__brand,
+.btn,
+.footer__link {
+  transition: var(--transition);
+}
+
 .section {
   padding: 2rem 0;
 }
